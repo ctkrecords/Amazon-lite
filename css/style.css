@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+}
+.color_blue{
+    background: #232F3D;
+}
+.fondo-css{
+	background-image: url("../images/image 2.png");
+	background-color: #cccccc;
+	height: 526px;
+ 	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	/*position: relative;*/
+}
+.nuevoBack{
+	background: #eaeded;
+}
+.card{
+	height: 382px;
+}
+.backFooterInicio{
+	background: #374759;
+}
+.backFooterFin{
+	background: #222E3D;
+}
+.no-padding{
+	padding-left: 0;
+	padding-right: 0;
+}
+.contenedor{
+	border-radius: 6px;
+	border: 1px solid #DCDCDC;
+	box-sizing: border-box;
+}
+.btn-inicio{
+	background: linear-gradient(360deg, #EFC25C 9.31%, #F8E7C1 100%);
+	border: 1px solid #9C7E37;
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 100%;
+	font-weight: 500;
+}
+.btn-crea{
+	background: linear-gradient(360deg, #ECECEC 9.31%, #F9F9F9 100%);
+	border: 1px solid #A5A5A5;
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 100%;
+	font-weight: 500;
+}
+.lineOn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #A5A5A5;
+    font-size: 0.875rem;
+}
+.lineOn:before, 
+.lineOn:after{
+    content: '';
+    border-top: 1px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+    color: #C0C0C0;
+}
+.lineOn:after{
+    margin: 0 0 0 20px;
+}
+.iniciar{
+	font-size: 2.1875rem;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 2.56rem;
+
+}
+.footerLogin{
+	background: linear-gradient(180deg, #F2F2F2 0%, rgba(255, 255, 255, 0) 50.49%);
+}
+.gris-span{
+	font-size: 0.75rem;
+	color: #A5A5A5;
+	font-weight: normal;
+}
+.twin,
+.btn-light{
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+}
+.btn-light:hover{
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+	background: #FFE9D0;
+	border: 1px solid #EBA076;
+	box-sizing: border-box;
+	font-weight: bold;
+}
+.imgShadow:hover{
+	border: 1px solid #FF0E0E;
+}
+.imgSom{
+	border: 0.5px solid #C0C0C0;
+}
