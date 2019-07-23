@@ -111,3 +111,12 @@ body{
 	box-sizing: border-box;
 	border-radius: 4px;
 }
+.container-detail{
+	background: #EAEDED;
+	border-radius: 0px 0px 4px 4px;
+}
+.gris-span-precio{
+	font-size: 0.75rem;
+	color: #A5A5A5;
+	font-weight: normal;
+}
