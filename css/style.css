@@ -120,3 +120,15 @@ body{
 	color: #A5A5A5;
 	font-weight: normal;
 }
+.customers{
+	font-weight: 900;
+	font-size: 1.5625rem;
+	line-height: 1.8125rem;
+	color: #E18C5C;
+}
+.custom-juego, .by{
+	font-size: 0.875rem;
+}
+.by{
+	color: #A5A5A5;
+}
