@@ -180,3 +180,9 @@ body{
 	width: 100%;
 	font-weight: 500;
 }
+.class-especificar{
+	background: #F2F2F2;
+	border: 1px solid #BDBDBD;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
