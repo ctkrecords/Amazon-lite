@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5091369d7c.js"></script>
     <title>Amazon</title>
 </head>
 <body> 
@@ -17,7 +18,7 @@
                         <img src="images/amazon.png" alt="" class="img-fluid">    
                     </a>                    
                 </div>
-                <div class="col-7 d-flex align-items-center pl-5">
+                <div class="col-6 d-flex align-items-center pl-5">
                     <div class="container">
                         <div class="input-group">
                             <div class="input-group-prepend">
@@ -29,14 +30,15 @@
                                         <div role="separator" class="dropdown-divider"></div>
                                         <a class="dropdown-item" href="#">Separated link</a>
                                     </div>
-                            </div>
+
+                            </div>        
                                 <input type="text" class="form-control" aria-label="Text input with dropdown button">
                             </div>
                     </div>
                     
                 </div>
-                <div class="col-3 d-flex align-items-end pl-0">
-                    <div class="container pb-2 pl-0">
+                <div class="col-4 d-flex align-items-end pl-0">
+                    <div class="container-fluid pl-0">
                         <p class="text-right">Servicio al cliente 24/7. Más información</p>
                     </div>
                 </div>
@@ -105,9 +107,10 @@
                             <br>
                             <a href="#" class="nav-link">Pedidos</a>
                         </li>
-                        <li class="nav-item pt-3">
+                        <li class="nav-item">
+                            <br>
                             <a href="#" class="nav-link">
-                                <img src="images/carrito.png">Carrito
+                                <i class="fas fa-cart-plus"></i>Carrito
                             </a>
                         </li>
                     </ul>
@@ -119,7 +122,7 @@
           </nav>
     </div>
 
-    <div class="container-fluid pt-5">
+    <div class="container-fluid pt-5" id="Inicio">
         <div class="row pb-4">
             <div class="col-3 text-center">
                 <img src="images/sabanas.png" class="img-fluid">
@@ -186,13 +189,19 @@
                         Cantidad: 1
                       </button>
                     </div>
-                    <button type="submit" class="btn btn-inicio mb-3">Agregar al Carrito</button>
-                    <button type="submit" class="btn btn-inicio mb-3">Comprar ahora</button>
+                    <a href="direccion.html" class="btn btn-inicio mb-3">
+                        <i class="fas fa-shopping-cart"></i>
+                        Agregar al Carrito
+                    </a>
+                    <a href="direccion.html" class="btn btn-inicio mb-3">
+                        <i class="fas fa-play"></i>
+                        Comprar ahora
+                    </a>
                     <p>Vendido y enviado por Amazon.com</p>
                     <p>Se puede envolver para regalo.<hr></p>
                     <a href="#">
                         <img src="images/placeb.png" class="pb-2">
-                        Enviar a Luis - San Salvador 1101
+                        Enviar a Luis - San Salvador 11
                     </a>
                     <br>
                     <div class="container-fluid container-detail pl-0 pr-0 mt-3 pb-0">
@@ -212,7 +221,11 @@
                     </div>
                 </div>
                 <hr>
-                <button class="btn">Agregar a la Lista</button>
+                <div class="dropdown pb-3">
+                    <button class="btn btn-crea dropdown-toggle" style="width: 100%" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Agregar a la Lista
+                    </button>
+                </div>
             </div>
         </div>
         <hr>
@@ -231,69 +244,198 @@
                       </div>                      
                       <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
                       <p class="by">by Mellani</p>
-                      <p style="font-size: 24px;"><span style="font-size: 12px;">USD</span>24<span style="font-size: 12px;">70</span></p>
+                      <p>USD 24.70 - USD 51.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <p>“Great quallity linen. Very satisfied.” - Amazon Customer</p>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-body">
                       <div class="container text-center">
                           <img src="images/sablack.png" class="img-fluid" alt="...">
-                      </div>
+                      </div>                      
                       <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
-                      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="by">by Mellani</p>
+                      <p>USD 19.99 - USD 29.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <p>Very comfortable. To sleep on.” - scottzell</p>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-body">
                       <div class="container text-center">
                           <img src="images/sablack.png" class="img-fluid" alt="...">
-                      </div>
+                      </div>                      
                       <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="by">by Mellani</p>
+                      <p>USD 24.70 - USD 51.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <p>“Great quallity linen. Very satisfied.” - Amazon Customer</p>
                     </div>
                   </div>
                   <div class="card">
                     <div class="card-body">
-                       <div class="container text-center">
+                      <div class="container text-center">
                           <img src="images/sablack.png" class="img-fluid" alt="...">
-                      </div>
+                      </div>                      
                       <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="by">by Mellani</p>
+                      <p>USD 24.70 - USD 51.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <p>Very comfortable. To sleep on.” - scottzell</p>
                     </div>
                   </div>
-                  <div class="card">
-                    
+                <div class="card">
                     <div class="card-body">
-                        <div class="container text-center">
+                      <div class="container text-center">
                           <img src="images/sablack.png" class="img-fluid" alt="...">
-                      </div>
+                      </div>                      
                       <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      <p class="by">by Mellani</p>
+                      <p>USD 24.70 - USD 51.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <p>“Great quallity linen. Very satisfied.” - Amazon Customer</p>
                     </div>
                   </div>
-                </div>
             </div>
         </div>
     </div>
+    <hr>
+    <div class="row pb-4">
+        <div class="col">
+            <h4 class="font-weight-bold">¿Tienes una pregunta?</h4>
+            <p class="by">Busca la información del producto, preguntas frecuentes, opiniones...</p>
+            <div class="container">
+                <div class="inner-addon left-addon">
+                  <i class="fas fa-search"></i>
+                  <input type="text" class="form-control" placeholder="" />
+                </div>
+            </div>  
+        </div>
+    </div>
+    <hr>
+    <div class="row pt-4">
+        <div class="col">
+            <h3 class="customers">Descripción del producto</h3>
+            <p class="by">Tamaño: <strong>Twin</strong>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Color: <strong>Baby Blue</strong></p>
+            <p class="custom-juego">Juego de sábanas impreso. 100 % de microfibra cepillada de la más alta calidad. <br><br>
+             Deja que la fina ropa de cama Mellanni te envuelva en elegancia, lujo y confort. <br> El juego de ropa de cama entallado con un diseño cuadrifolio. <br> Cuidadosamente elaborado para añadir una exquisita clase a tu recámara y mejorar la decoración. <br><br>Entendemos que tu tiempo es importante, esa es la razón por la cual esta excepcionalmente suave y fuerte ropa de cama. <br> Es antiarrugas, resistente al desgaste y a las manchas, para que puedas pasar más tiempo en las cosas importantes de la vida. <br>Es el ajuste perfecto con cuidado fácil, todo en uno. <br><br> Sábanas de microfibra hipoalergénica, mantiene a las narices tapadas lejos, mientras bloquea alérgenos no deseados, ácaros del polvo y la humedad. <br>Deja que tu cuerpo respire mientras te mantienes fresco y cómodo toda la noche. <br><br>
+             - <br>
+             - <br>
+             <br>
+             Desplázate hacia arriba y haz clic en añadir al carrito para tu mejor sueño.
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="row pt-4">
+        <div class="col">
+            <h3 class="customers">Información del producto</h3>
+            <p class="custom-juego">Tamaño: <strong>Twin</strong>&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;Color: <strong>Baby Blue</strong></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table table-bordered custom-juego">
+                <tr>
+                  <td class="bgtable">Dimensiones del paquete</td>
+                  <td>11 x 9.6 x 3 pulgadas</td>
+                </tr>
+                <tr>
+                  <td class="bgtable">Peso del producto</td>
+                  <td>1.85 pounds</td>
+                </tr>
+                <tr>
+                  <td class="bgtable">Peso del envío</td>
+                  <td>2.35 pounds</td>
+                </tr>
+                <tr>
+                  <td class="bgtable">Fabricante</td>
+                  <td>Mellanni</td>
+                </tr>
+                <tr>
+                  <td class="bgtable">ASIN</td>
+                  <td>B00O35D38Y</td>
+                </tr>
+                <tr>
+                  <td class="bgtable">Número de modelo del producto</td>
+                  <td>SYNCHKG053477</td>
+                </tr>
+                <tr>
+                  <td class="bgtable">Opinión media de los clientes</td>
+                  <td>
+                      <img src="images/star.png" class="img-fluid">
+                      <img src="images/star.png" class="img-fluid">
+                      <img src="images/star.png" class="img-fluid">
+                      <img src="images/star.png" class="img-fluid">
+                      &nbsp;&nbsp;&nbsp;
+                      <a href="#" class="custom-juego" style="font-weight: 500;">55,998 opiniones de clientes</a>
+                      <br><br>
+                      <p class="custom-juego">4.4 de un máximo de 5 estrellas</p>
+                  </td>
+                </tr>
+            </table>
+        </div>
+        <div class="col">
+            <h5 class="garantia">Garantía y asistencia</h5>
+            <hr>
+            <p class="custom-juego"><strong>Garantía del producto:</strong> Para obtener la información sobre la garantía de este producto, <strong>Product Warranty:</strong> For wararanty information about this product, please <a href="#">haz clic aquí</a></p>
+            <br>
+            <h5 class="garantia">Comentarios</h5>
+            <hr>
+            <p class="custom-juego">Si vendes este producto, ¿Te gustaría <a href="#" style="font-weight: 500;">sugerir actualizaciones mediante el soporte al vendedor</a>? ¿Quieres <a href="#" style="font-weight: 500;">informarnos sobre un precio más abajo? </a></p>
+        </div>
+    </div>
 
 
-                      
-
-    <div class="container-fluid backFooterInicio"> 
+    <div class="container-fluid backFooterInicio pl-0 pr-0"> 
         <div class="row text-center text-white pt-3 backFooterInicio">
-            <div class="col-12"><p>Inicio de página</p></div>
+            <div class="col-12">
+                <a href="#Inicio"><p class="text-white" style="font-weight: 500">Inicio de página</p></a>
+            </div>
         </div>
     </div>
            
-    <div class="container-fluid backFooterFin">
-        <div class="container">
-            <div class="row backFooterFin text-white pt-3 pb-3">
+    <div class="container-fluid backFooterFin pl-0 pr-0">
+     
+            <div class="row backFooterFin text-white pt-3 pb-3 pl-5">
                 <div class="col-3">
-                    <h5>Conócenos</h5>
+                    <h5 class="font-weight-bold">Conócenos</h5>
                     <a href="" class="text-white">Trabaja en Amazon</a><br>
                     <a href="" class="text-white">Blog</a><br>
                     <a href="" class="text-white">Acerca de Amazon</a><br>
@@ -302,7 +444,7 @@
                     <a href="" class="text-white">Visita un centro logístico de Amazon</a><br>
                 </div>
                 <div class="col-3">
-                    <h5>Gana dinero con nosotros</h5>
+                    <h5 class="font-weight-bold">Gana dinero con nosotros</h5>
                     <a href="" class="text-white">Vende en Amazon</a><br>
                     <a href="" class="text-white">Vende tus servicios en Amazon</a><br>
                     <a href="" class="text-white">Vende en Amazon Business</a><br>
@@ -313,13 +455,13 @@
                     <a href="" class="text-white">> Ver Más</a>
                 </div>
                 <div class="col-3">
-                    <h5>Productos de Pago Amazon</h5>
+                    <h5 class="font-weight-bold">Productos de Pago Amazon</h5>
                     <a href="" class="text-white">Compra con puntos</a><br>
                     <a href="" class="text-white">Recarga tu Saldo</a><br>
                     <a href="" class="text-white">Convetidor de Moneda de Amazon</a>
                 </div>
                 <div class="col-3">
-                    <h5>Podemos ayudarte</h5>
+                    <h5 class="font-weight-bold">Podemos ayudarte</h5>
                     <a href="" class="text-white">Tu cuenta</a><br>
                     <a href="" class="text-white">Tus pedidos</a><br>
                     <a href="" class="text-white">Tarifas de Envío y Políticas</a><br>
@@ -329,7 +471,7 @@
                     <a href="" class="text-white">Ayuda</a>
                 </div>
             </div>
-        </div>
+       
     
         <div class="row backFooterFin d-flex pb-4">
             <div class="col-12">

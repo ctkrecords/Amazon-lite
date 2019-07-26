@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/5091369d7c.js"></script>
+    <title>Dirección</title>
+</head>
+<body>
+	
+	<div class="container-fluid pt-4">
+		<div class="row container pb-5">
+			<div class="col-3">
+				<a href="index.html"><img src="images/amazoncom.png" class="img-fluid"></a>
+			</div>
+			<div class="col-8">
+				<div class="row">
+					<div class="col">
+						<hr>
+						<div class="row d-flex align-items-end">
+							<div class="col text-center">
+								<p style="color: #E2A301;">INICIAR SESIÓN</p>
+							</div>
+							<div class="col text-center">
+								<i class="fas fa-shopping-cart"></i><br>
+								<p  style="color: #FA7800;">ENVÍO Y PAGO</p>
+							</div>
+							<div class="col text-center nuevo-gris">
+								<p>OPCIÓN DE REGALO</p>
+							</div>
+							<div class="col nuevo-gris text-center">
+								<p>FINALIZAR PEDIDO</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row container-fluid pb-5">
+			<div class="col">
+				<h2>Seleccionar una dirección de envío</h2>
+				<p>¿Aparece a continuación la dirección que deseas utilizar? Si es así, haz clic en el botón "Enviar a esta dirección". O puedes introducir una nueva dirección de envío.</p>
+			</div>
+		</div>
+		<div class="row container-fluid pb-5">
+			<div class="col-4">
+				<h4>Scottie Frankie Pairpoint Nacey</h4>
+				<p> 641 Charing Cross Junction <br> Long Beach Art. 1234 <br> Casa #22 <br> California, Estados Unidos 1203 <br> Teléfono Celular: 72702036
+				</p>
+				<a href="#" class="btn btn-inicio" style="width: 91%">Entregar a esta dirección</a>
+				<div class="row container-fluid pt-2 pl-0 pr-1">
+					<div class="col-6 pr-1">
+						<button class="btn btn-editar">Editar</button>
+					</div>
+					<div class="col-6 pl-1">
+						<button class="btn btn-editar">Eliminar</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row container-fluid pt-5">
+			<div class="col-7">
+				<h5>Agregar otra dirección</h5><br>
+				<p>Asegúrate de hacer clic en "Enviar a esta dirección" cuando hayas terminado.</p>
+				<form class="pb-4" method="POST" action="">
+				  <div class="form-group">
+				    <label for="nombreInput" class="label-direccion">Nombre/Quién recibe:</label>
+				    <input type="input" class="form-control" id="nombreInput" required="true">				   
+				  </div>
+				  <div class="form-group">
+				    <label for="dirInput" class="label-direccion">Dirección (calle, número de casa o interior, torre, empresa):</label>
+				    <input type="input" class="form-control" id="dirInput" placeholder="Calle, apartado postal, No. Ext/No. Int" required="true">
+				  </div>
+				  <div class="form-group">
+				    <label for="dir2Input" class="label-direccion">Línea de dirección 2:</label>
+				    <input type="input" class="form-control" id="dir2Input" placeholder="Apartamento, Suite, unidad, edificio, pisto, etc." required="true">
+				  </div>
+				  <div class="form-group">
+				  	<label class="label-direccion">Ciudad:</label>
+				  	<input class="form-control" type="input" required="true"/>
+				  </div>
+				  <div class="form-group">
+				  	<label class="label-direccion">Estado:</label>
+				  	<input class="form-control" type="input" required="true"/>
+				  </div>
+				  <div class="form-group">
+				  	<label class="label-direccion">Código postal</label>
+				  	<input class="form-control" type="input" required="true"/>
+				  </div>
+				  <div class="form-group">
+				  	<div class="dropdown">
+					  	<label class="label-direccion">País / región</label>	
+						<button class="btn dropdown-toggle dp-especial form-control text-right" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						</button>
+						<div class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%">
+						    <a class="dropdown-item form-control">United States</a>
+						    <a class="dropdown-item form-control">El Salvador</a>
+						    <a class="dropdown-item form-control">México</a>
+						  </div>
+					  </div>
+				  </div> 
+				   <div class="form-group">
+				  	<label class="label-direccion">Número de teléfono: (<a href="#">más información</a>)</label>
+				  	<input class="form-control" type="input" required="true"/>
+				  </div>
+				  <input type="submit" name="" class="btn btn-inicio" value="Entregar a esta dirección">
+				</form>
+				<h5>Agregar instrucciones de entrega (opcional)</h5><br>
+				<div class="form-group">
+					<p class="label-direccion">¿Necesitamos indicaciones adicionales para encontrar esta dirección?</p>
+					<textarea class="form-control" rows="3" placeholder="Proporciónanos detalles de la descripción del edificio, un punto de referencia cercano o alguna otra señal para llegar"></textarea>
+				</div>				
+				<div class="form-group">
+					<p class="label-direccion">¿Necesitamos un código de seguridad o un número de casilla a llamar para acceso?</p>
+					<input class="form-control" type="input" placeholder="1234" />
+				</div>		
+
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid footerLogin pt-5 pb-5">
+        <div class="container text-center">
+            <div class="row" style="font-weight: 500">
+                <div class="col-3"></div>
+                <div class="col-2 pr-4">
+                     <a href="#">Condiciones de uso</a>
+                </div>
+                <div class="col-2 pr-0">
+                    <a href="#">Aviso de privacidad</a>
+                </div>
+                <div class="col-2 pl-0">
+                    <a href="#">Ayuda</a>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            <div class="row pt-3">
+                <div class="col">
+                    <p>&copy; 1996-2019, Amazon.com, Inc. o sus filiales</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+ 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

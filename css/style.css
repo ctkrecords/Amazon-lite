@@ -132,3 +132,51 @@ body{
 .by{
 	color: #A5A5A5;
 }
+.card{
+	height: auto !important;
+}
+.inner-addon {
+  position: relative;
+}
+.inner-addon .fas {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+.left-addon .fas {
+  left: 0px;
+}
+.left-addon input {
+  padding-left: 30px;
+}
+.bgtable{
+	background: #EAEDED;
+}
+.garantia{
+	font-weight: bold;
+	font-size: 1.125rem;
+	line-height: 1.315rem;
+}
+.info{
+	font-size: 0.75rem;
+}
+.nuevo-gris{
+	color: #BDBDBD;
+}
+.label-direccion{
+	font-weight: 500;
+}
+.dp-especial{
+	border: 1px solid #C0C0C0;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.btn-editar{
+	background: linear-gradient(360deg, #ECECEC 9.31%, #F9F9F9 100%);
+	border: 1px solid #A5A5A5;
+	box-sizing: border-box;
+	border-radius: 4px;
+	width: 100%;
+	font-weight: 500;
+}
