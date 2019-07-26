@@ -185,4 +185,43 @@ body{
 	border: 1px solid #BDBDBD;
 	box-sizing: border-box;
 	border-radius: 4px;
+	font-size: 1.1875rem;
+}
+.container-bor{
+	border: 1px solid #E0E0E0;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.btn-paypal{
+	background: linear-gradient(180deg, #E4EFF5 -5.43%, #D6EAF3 139.12%);
+	border: 1px solid #BAE7FD;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.StripeElement {
+  box-sizing: border-box;
+
+  height: 40px;
+
+  padding: 10px 12px;
+
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
 }

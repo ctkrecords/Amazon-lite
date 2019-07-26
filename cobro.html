@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/5091369d7c.js"></script>
+    <script src="https://js.stripe.com/v3/"></script>
     <title>Dirección</title>
 </head>
 <body>
@@ -39,9 +40,82 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
-			<p class="class-especificar p-2"> Especifica a continuación cómo te gusta realizar el pago y lo guardaremos como opción.</p>
+		<div class="row pb-3">
+			<div class="col-8">
+				<div class="container-fluid">
+					<p class="class-especificar pl-2 pt-2 pb-2 pr-0"><i class="fas fa-exclamation-circle pl-2 pr-3"></i>Especifica a continuación cómo te gusta realizar el pago y lo guardaremos como opción.</p>
+				</div>		
+			</div>
 		</div>
+		<div class="row pb-3">
+			<div class="col-9">
+				<div class="container-fluid">
+					<h2>Selecciona un método de pago</h2>
+					<hr>
+					<table>
+						<tr>
+							<td>
+								<h3>Selecciona uno de nuestros metodos de pago</h3>
+								
+							</td>
+							<td class="pl-4">
+								<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+									<input type="hidden" name="cmd" value="_s-xclick">
+									<input type="hidden" name="hosted_button_id" value="8TFZ58X8M9UEN">
+									<input type="image" src="images/paypal.png" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!" class="btn btn-paypal" id="paypal">
+									<img alt="" border="0" src="https://www.paypalobjects.com/es_XC/i/scr/pixel.gif" width="1" height="1">
+								</form>
+							</td>
+							<td>
+								<button class="btn btn-editar" onclick="ocultar_aparecer()">
+									<i class="far fa-credit-card"></i>
+									Pagar con tarjeta
+								</button>
+							</td>
+						</tr>
+						<tr>
+							<td><p>Amazon acepta la mayoría de tarjetas de crédito o débito y plataformas de pago</p></td>
+						</tr>
+					</table>
+				</div>	
+			</div>
+		</div>
+		<div class="row">
+			<div class="col">
+				<div class="container-fluid" id="stripe_pago">
+					<p>Ingrese la información de su tarjeta: </p>
+					<div class="row">
+						<div class="col-xl-3">
+							<form action="" method="post" id="payment-form">
+							<div class="form-group">
+								<label class="label-direccion">Nombre de titular en la tarjeta</label>
+								<input class="form-control" type="input" required="true" />		
+							</div>
+						</div>
+						<div class="col-xl-3">
+							  <div class="form-group">
+							    <label for="card-element" class="label-direccion">
+							      Número de tarjeta
+							    </label>
+							    <div id="card-element" class="form-control">
+							      <!-- A Stripe Element will be inserted here. -->
+							    </div>
+							    <!-- Used to display form errors. -->
+							    <div id="card-errors" role="alert"></div>
+							  </div>
+						</div>
+						<div class="col-xl-2 d-flex align-items-center">
+							<div class="container">
+								<button class="btn btn-inicio">Pagar ahora</button>
+							</div>
+							</form>
+						</div>	
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
 	</div>
 
 		<div class="container-fluid footerLogin pt-5 pb-5">
@@ -68,7 +142,7 @@
     </div>
     
 
-
+    <script type="text/javascript" src="js/script.js"></script>
  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
