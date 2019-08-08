@@ -235,6 +235,12 @@ div.scrollmenu {
   overflow: auto;
   white-space: nowrap;
 }
+#col-hide{
+	display: none;
+}
+#custom-reco-show{
+	display: none;
+}
 
 @media (max-width: 767px){
 	#servicio{
@@ -267,5 +273,23 @@ div.scrollmenu {
 @media (min-width: 576px){
 	#oculto{
 		display: none;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+	#col-hide{
+		display: inline;
+	}
+}
+
+@media (min-width: 576px) and (max-width: 990px){
+	#col-hide{
+		display: inline;
+	}
+	#custom-reco{
+		display: none;
+	}
+	#custom-reco-show{
+		display: inline-flex;
 	}
 }

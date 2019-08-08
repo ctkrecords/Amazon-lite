@@ -12,14 +12,19 @@
 <body> 
     <div id="head">
         <div class="container-fluid color_blue text-white">
-            <div class="row">
-                <div class="col-2">
+            <div class="row pt-2">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
                     <a href="index.html">
-                        <img src="images/amazon.png" alt="" class="img-fluid">    
-                    </a>                    
+                        <img src="images/amazon.png" alt="" class="img-fluid" id="logo-res">    
+                    </a>  
+                    <div class="pl-5" id="oculto">
+                        <i class="fas fa-map-marker-alt text-white"></i>
+                        <span class="text-white" style="font-size: 0.75rem">Enviar a <span>
+                        <span class="text-white font-weight-bold">El Salvador </span>
+                    </div>                  
                 </div>
-                <div class="col-6 d-flex align-items-center pl-5">
-                    <div class="container">
+                <div class="col-xl-6 col-lg-6 col-md-7 col-sm-10 d-flex align-items-center">
+                    <div class="container-fluid">
                         <div class="input-group">
                             <div class="input-group-prepend">
                                <button class="btn dropdown-toggle bg-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Todos</button>
@@ -37,28 +42,25 @@
                     </div>
                     
                 </div>
-                <div class="col-4 d-flex align-items-end pl-0">
-                    <div class="container-fluid pl-0">
+                <div class="col-xl-4 col-lg-4 col-md-3 col-sm-3 d-flex align-items-end pl-0" id="servicio">
+                    <div class="container pl-0">
                         <p class="text-right">Servicio al cliente 24/7. Más información</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-dark color_blue">
-            <div class="row container-fluid">
-                <div class="col-1 pr-0 pl-0">
-                    <img src="images/place.png" alt="" class="">
-                    <span class="text-white" style="font-size: 0.75rem">Enviar a <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; El Salvador </span>
+        </div>        
+
+        <div class="container-fluid color_blue">
+            <div class="row">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2" id="hide-place">
+                        <i class="fas fa-map-marker-alt text-white"></i>
+                        <span class="text-white" style="font-size: 0.75rem">Enviar a <span><br> 
+                        <span class="text-white font-weight-bold">El Salvador </span>
                 </div>
-                <div class="col-7 pl-2">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-          
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="col-xl-7 col-lg-7 col-md-6 col-sm-10 pl-0 scrollmenu pt-2">
+                        <ul class="text-white ">
+                            <li class="active dropdown pr-3">
+                                <a class="dropdown-toggle text-white font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Departamentos
                                 </a>
                                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -68,33 +70,33 @@
                                         <a class="dropdown-item" href="#">Something else here</a>
                                 </div>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ofertas del día</a>
+                            <li class="pr-3">
+                                <a class="text-white" href="#">Ofertas del día</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tu amazon.com</a>
+                            <li class="pr-3">
+                                <a class="text-white" href="#">Tu amazon.com</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Tarjetas de regalo</a>
+                            <li class="pr-3">
+                                <a class="text-white" href="#">Tarjetas de regalo</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Ayuda</a>
+                            <li class="pr-3">
+                                <a class="text-white" href="#">Ayuda</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Listas</a>
+                            <li class="pr-3">
+                                <a class="text-white" href="#">Listas</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Vender</a>
+                            <li class="">
+                                <a class="text-white" href="#">Vender</a>
                             </li>
                         </ul>
-                    </div>
+                  
                 </div>
-                <div class="col-3 p-0">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item dropdown text-white">                        
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12  scrollmenu">
+                    <ul class="pl-xl-0 pl-lg-0 pl-md-0 pl-sm-0">
+                        <li class="dropdown text-white pr-2" style="display: inline;">                        
+                            <a class="dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span style="font-size: 0.75rem" class="text-right">Hola, identifícate</span><br>
-                                Cuenta y Listas
+                                <span class="font-weight-bold">Cuenta y Listas</span>
                             </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="login.html">Sign in</a>
@@ -103,32 +105,28 @@
                                 <a class="dropdown-item" href="#">Something else here</a>
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <br>
-                            <a href="#" class="nav-link">Pedidos</a>
+                        <li class="pr-2" style="display: inline;">
+                            <a href="#" class="font-weight-bold text-white">Pedidos</a>
                         </li>
-                        <li class="nav-item">
-                            <br>
-                            <a href="#" class="nav-link">
+                        <li class="">
+                            <a href="#" class="font-weight-bold text-white">
                                 <i class="fas fa-cart-plus"></i>Carrito
                             </a>
                         </li>
                     </ul>
                 </div>
              
-            </div>
-                
-          
-          </nav>
+            </div>   
+        </div>
     </div>
 
     <div class="container-fluid pt-5" id="Inicio">
         <div class="row pb-4">
-            <div class="col-3 text-center">
+            <div class="col-6 col-xl-3 col-lg-3 col-md-6 col-sm-6 text-center">
                 <img src="images/sabanas.png" class="img-fluid">
                 <p class="gris-span">Pasa el mouse por encima de la imagen para ampliarla</p>
             </div>
-            <div class="col-6">
+            <div class="col-6 col-xl-6 col-lg-6 col-md-6 col-sm-6 pb-3">
                 <h5>Juego de sábana de cama Mellani, microfibra cepillada de alta calidad, impreso, bolsillo profundo,
                 antiarrugas, resistente al desgaste y a las manchas, hipoalergénico, 4 piezas, Microfibra, Celeste (Baby Blue),
                 gemelo</h5>
@@ -172,7 +170,8 @@
                 </ul>
                 <a href="#">Comparar con artículos similares</a>
             </div>
-            <div class="col-3">
+            <div class="col-md-2" id="col-hide"></div>
+            <div class="col-12 col-xl-3 col-lg-3 col-md-8 col-sm-12">
                 <div class="container-fluid containerBorder pt-3 pb-0">
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
@@ -227,6 +226,7 @@
                     </button>
                 </div>
             </div>
+            <div class="col-md-2" id="col-hide"></div>
         </div>
         <hr>
         <div class="row pb-3">
@@ -234,7 +234,7 @@
                 <h3 class="customers">Customers recommend</h3>
             </div>
         </div>
-        <div class="row pb-3">
+        <div class="row pb-3" id="custom-reco">
             <div class="col">
                 <div class="card-deck">
                   <div class="card">
@@ -253,7 +253,7 @@
                           <img src="images/medium.png" class="img-fluid">
                           <a href="#" class="custom-juego">55,998</a>
                       </p>
-                    <p>“Great quallity linen. Very satisfied.” - Amazon Customer</p>
+                    <i class="custom-juego font-weight-bold">“Great quallity linen. Very satisfied.”  <br> - Amazon Customer</i>
                     </div>
                   </div>
                   <div class="card">
@@ -272,7 +272,7 @@
                           <img src="images/medium.png" class="img-fluid">
                           <a href="#" class="custom-juego">55,998</a>
                       </p>
-                    <p>Very comfortable. To sleep on.” - scottzell</p>
+                    <i class="custom-juego font-weight-bold">Very comfortable. To sleep on.” <br> - scottzell</i>
                     </div>
                   </div>
                   <div class="card">
@@ -291,7 +291,7 @@
                           <img src="images/medium.png" class="img-fluid">
                           <a href="#" class="custom-juego">55,998</a>
                       </p>
-                    <p>“Great quallity linen. Very satisfied.” - Amazon Customer</p>
+                    <i class="custom-juego font-weight-bold">“Great quallity linen. Very satisfied.” <br> - Amazon Customer</i>
                     </div>
                   </div>
                   <div class="card">
@@ -310,7 +310,7 @@
                           <img src="images/medium.png" class="img-fluid">
                           <a href="#" class="custom-juego">55,998</a>
                       </p>
-                    <p>Very comfortable. To sleep on.” - scottzell</p>
+                    <i class="custom-juego font-weight-bold">Very comfortable. To sleep on.” <br> - scottzell</i>
                     </div>
                   </div>
                 <div class="card">
@@ -329,12 +329,100 @@
                           <img src="images/medium.png" class="img-fluid">
                           <a href="#" class="custom-juego">55,998</a>
                       </p>
-                    <p>“Great quallity linen. Very satisfied.” - Amazon Customer</p>
+                    <i class="custom-juego font-weight-bold">“Great quallity linen. Very satisfied.” <br> - Amazon Customer</i>
                     </div>
                   </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="row pb-3" id="custom-reco-show">
+            <div class="col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="container text-center">
+                          <img src="images/sablack.png" class="img-fluid" alt="...">
+                      </div>                      
+                      <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
+                      <p class="by">by Mellani</p>
+                      <p>USD 24.70 - USD 51.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <i class="custom-juego font-weight-bold">“Great quallity linen. Very satisfied.” <br> - Amazon Customer</i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                 <div class="card">
+                    <div class="card-body">
+                      <div class="container text-center">
+                          <img src="images/sablack.png" class="img-fluid" alt="...">
+                      </div>                      
+                      <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
+                      <p class="by">by Mellani</p>
+                      <p>USD 19.99 - USD 29.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <i class="custom-juego font-weight-bold">Very comfortable. To sleep on.” <br> - scottzell</i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-3" id="custom-reco-show">
+            <div class="col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="container text-center">
+                          <img src="images/sablack.png" class="img-fluid" alt="...">
+                      </div>                      
+                      <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
+                      <p class="by">by Mellani</p>
+                      <p>USD 24.70 - USD 51.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <i class="custom-juego font-weight-bold">“Great quallity linen. Very satisfied.” <br> - Amazon Customer</i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                      <div class="container text-center">
+                          <img src="images/sablack.png" class="img-fluid" alt="...">
+                      </div>                      
+                      <a href="#" class="custom-juego">Juego de sábana de cama Mellanni, microfibra cepillada de alta calidad...</a>
+                      <p class="by">by Mellani</p>
+                      <p>USD 24.70 - USD 51.97</p>
+                      <p>
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/Star.png" class="img-fluid">
+                          <img src="images/medium.png" class="img-fluid">
+                          <a href="#" class="custom-juego">55,998</a>
+                      </p>
+                    <i class="custom-juego font-weight-bold">Very comfortable. To sleep on.” <br> - scottzell</i>
+                    </div>
+                </div>
+            </div>
+        </div>
     <hr>
     <div class="row pb-4">
         <div class="col">
@@ -433,44 +521,49 @@
            
     <div class="container-fluid backFooterFin pl-0 pr-0">
      
-            <div class="row backFooterFin text-white pt-3 pb-3 pl-5">
-                <div class="col-3 col-sm-6">
-                    <h5 class="font-weight-bold">Conócenos</h5>
-                    <a href="" class="text-white">Trabaja en Amazon</a><br>
-                    <a href="" class="text-white">Blog</a><br>
-                    <a href="" class="text-white">Acerca de Amazon</a><br>
-                    <a href="" class="text-white">Relaciones con los inversionistas</a><br>
-                    <a href="" class="text-white">Dispositivos Amazon</a><br>
-                    <a href="" class="text-white">Visita un centro logístico de Amazon</a><br>
-                </div>
-                <div class="col-3 col-sm-6">
-                    <h5 class="font-weight-bold">Gana dinero con nosotros</h5>
-                    <a href="" class="text-white">Vende en Amazon</a><br>
-                    <a href="" class="text-white">Vende tus servicios en Amazon</a><br>
-                    <a href="" class="text-white">Vende en Amazon Business</a><br>
-                    <a href="" class="text-white">Vende tus Apps en Amazon</a><br>
-                    <a href="" class="text-white">Programa de afiliados</a><br>
-                    <a href="" class="text-white">Anuncia tus productos</a><br>
-                    <a href="" class="text-white">Pública tu libro Kindle</a><br>
-                    <a href="" class="text-white">> Ver Más</a>
-                </div>
-                <div class="col-3 col-sm-6">
-                    <h5 class="font-weight-bold">Productos de Pago Amazon</h5>
-                    <a href="" class="text-white">Compra con puntos</a><br>
-                    <a href="" class="text-white">Recarga tu Saldo</a><br>
-                    <a href="" class="text-white">Convetidor de Moneda de Amazon</a>
-                </div>
-                <div class="col-3 col-sm-6">
-                    <h5 class="font-weight-bold">Podemos ayudarte</h5>
-                    <a href="" class="text-white">Tu cuenta</a><br>
-                    <a href="" class="text-white">Tus pedidos</a><br>
-                    <a href="" class="text-white">Tarifas de Envío y Políticas</a><br>
-                    <a href="" class="text-white">Devoluciones y Reemplazos</a><br>
-                    <a href="" class="text-white">Administrar dispositivos</a><br>
-                    <a href="" class="text-white">Amazon Assistant</a><br>
-                    <a href="" class="text-white">Ayuda</a>
-                </div>
-            </div>
+        <div class="row backFooterFin text-white pt-3 pb-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <h5 class="font-weight-bold h5-foot">Conócenos</h5>
+                        <a href="" class="text-white a-foot">Trabaja en Amazon</a><br>
+                        <a href="" class="text-white a-foot">Blog</a><br>
+                        <a href="" class="text-white a-foot">Acerca de Amazon</a><br>
+                        <a href="" class="text-white a-foot">Relaciones con los inversionistas</a><br>
+                        <a href="" class="text-white a-foot">Dispositivos Amazon</a><br>
+                        <a href="" class="text-white a-foot">Visita un centro logístico de Amazon</a><br>
+                    </div>
+                    <div class="col-6 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <h5 class="font-weight-bold h5-foot">Gana dinero con nosotros</h5>
+                        <a href="" class="text-white a-foot">Vende en Amazon</a><br>
+                        <a href="" class="text-white a-foot">Vende tus servicios en Amazon</a><br>
+                        <a href="" class="text-white a-foot">Vende en Amazon Business</a><br>
+                        <a href="" class="text-white a-foot">Vende tus Apps en Amazon</a><br>
+                        <a href="" class="text-white a-foot">Programa de afiliados</a><br>
+                        <a href="" class="text-white a-foot">Anuncia tus productos</a><br>
+                        <a href="" class="text-white a-foot">Pública tu libro Kindle</a><br>
+                        <a href="" class="text-white a-foot">> Ver Más</a>
+                    </div>
+                    <div class="col-6 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <h5 class="font-weight-bold h5-foot">Productos de Pago Amazon</h5>
+                        <a href="" class="text-white a-foot">Compra con puntos</a><br>
+                        <a href="" class="text-white a-foot">Recarga tu Saldo</a><br>
+                        <a href="" class="text-white a-foot">Convetidor de Moneda de Amazon</a>
+                    </div>
+                    <div class="col-6 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                        <h5 class="font-weight-bold h5-foot">Podemos ayudarte</h5>
+                        <a href="" class="text-white a-foot">Tu cuenta</a><br>
+                        <a href="" class="text-white a-foot">Tus pedidos</a><br>
+                        <a href="" class="text-white a-foot">Tarifas de Envío y Políticas</a><br>
+                        <a href="" class="text-white a-foot">Devoluciones y Reemplazos</a><br>
+                        <a href="" class="text-white a-foot">Administrar dispositivos</a><br>
+                        <a href="" class="text-white a-foot">Amazon Assistant</a><br>
+                        <a href="" class="text-white a-foot">Ayuda</a>
+                    </div>
+                    </div>
+                     
+                </div>    
+        </div>
        
     
         <div class="row backFooterFin d-flex pb-4">
