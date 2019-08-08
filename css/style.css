@@ -225,3 +225,47 @@ body{
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
+li{
+	display: inline !important;
+}
+a:hover{
+	text-decoration-line: none;
+}
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 767px){
+	#servicio{
+		display: none !important;
+	}
+}
+@media (min-width: 768px){
+	#new-back{
+		display: none;
+	}
+}
+@media (max-width: 575px){
+	#oculto{
+		display: inline;
+	}
+	#hide-place{
+		display: none;
+	}
+	.backFooterFin{
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+	.h5-foot{
+		font-size: 1rem;
+	}
+	.a-foot{
+		font-size: 0.75rem;
+	}
+}
+@media (min-width: 576px){
+	#oculto{
+		display: none;
+	}
+}
