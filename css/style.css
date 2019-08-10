@@ -244,7 +244,23 @@ div.scrollmenu {
 #col-ama{
 	display: none;
 }
-
+.detail2-color{
+	color: #6F6F6F;
+}
+.hr-col{
+	border: 1px solid #C0C0C0;
+	border-left: none;
+	border-top: none;
+	border-bottom: none;
+}
+.precio{
+	font-weight: 500;
+	font-size: 1.5625rem;
+}
+sup{
+	font-size: 0.75rem;
+	top: -0.6em;
+}
 @media (max-width: 767px){
 	#servicio{
 		display: none !important;
@@ -306,5 +322,10 @@ div.scrollmenu {
 	}
 	.class-especificar{
 		font-size: 1rem;
+	}
+}
+@media (min-width: 991px){
+	.btn-width{
+		width: 70%;
 	}
 }
