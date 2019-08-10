@@ -100,6 +100,22 @@ body{
 	box-sizing: border-box;
 	font-weight: bold;
 }
+.btn-new{
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+	background: #F8F8F8;
+	border: 1px solid #DADADA;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+.btn-new:hover{
+	font-size: 0.875rem;
+	line-height: 1.625rem;
+	border: 1px solid #DADADA;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background: white;
+}
 .imgShadow:hover{
 	border: 1px solid #FF0E0E;
 }
@@ -246,6 +262,7 @@ div.scrollmenu {
 }
 .detail2-color{
 	color: #6F6F6F;
+	font-weight: 500;
 }
 .hr-col{
 	border: 1px solid #C0C0C0;
@@ -260,6 +277,18 @@ div.scrollmenu {
 sup{
 	font-size: 0.75rem;
 	top: -0.6em;
+}
+div.col-border{   
+  	position: relative;
+  	z-index : 1;
+}
+div.col-border:before{
+	content: "";
+  	position: absolute;
+  	left: 0;
+  	bottom: 0;
+  	width: 92%; 
+	border: 0.942809px solid #CFCFCF;
 }
 @media (max-width: 767px){
 	#servicio{
